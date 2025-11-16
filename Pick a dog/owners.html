@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dueños - Pick'a Dog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="owners.html">Mis Perros</a>
+    <a href="owners-runners.html">Runners Cerca</a>
+</nav>
+
+<div class="container">
+    <h2>Registrar Perro 🐕</h2>
+
+    <div style="text-align: center; margin-bottom: 20px;">
+        <a href="owners-runners.html"><button class="accent-btn">🏃 Ver Runners Disponibles</button></a>
+    </div>
+
+    <form id="form-perro">
+    <input type="text" id="nombrePerro" placeholder="Nombre del perro" required>
+    <input type="text" id="razaPerro" placeholder="Raza" required>
+    <input type="text" id="zonaPerro" placeholder="Zona / Colonia" required>
+
+    <!-- Foto del perro -->
+    <label for="fotoPerro" style="display:block; margin-top:8px;">Foto del perro (opcional):</label>
+    <input type="file" id="fotoPerro" accept="image/*">
+    <div id="preview-foto-perro" style="margin-top:8px;"></div>
+
+    <select id="tamanoPerro">
+        <option value="pequeño">Pequeño</option>
+        <option value="mediano">Mediano</option>
+        <option value="grande">Grande</option>
+    </select>
+
+    <select id="energiaPerro">
+        <option value="baja">Energía Baja</option>
+        <option value="media">Energía Media</option>
+        <option value="alta">Energía Alta</option>
+    </select>
+
+    <button type="submit">Guardar Perro</button>
+</form>
+
+
+    <h2>Mis Perros Registrados</h2>
+    <div id="lista-perros"></div>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
