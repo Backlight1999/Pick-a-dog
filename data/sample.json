@@ -1,0 +1,137 @@
+{
+  "perros": [
+    {
+      "id": 1000,
+      "nombre": "Max",
+      "raza": "Golden Retriever",
+      "zona": "condesa",
+      "tamano": "grande",
+      "energia": "alta",
+      "foto": ""
+    },
+    {
+      "id": 1001,
+      "nombre": "Luna",
+      "raza": "Husky Siberiano",
+      "zona": "roma",
+      "tamano": "grande",
+      "energia": "alta",
+      "foto": ""
+    },
+    {
+      "id": 1002,
+      "nombre": "Buddy",
+      "raza": "Labrador",
+      "zona": "coyoacán",
+      "tamano": "mediano",
+      "energia": "media",
+      "foto": ""
+    },
+    {
+      "id": 1003,
+      "nombre": "Bella",
+      "raza": "Pug",
+      "zona": "zona centro",
+      "tamano": "pequeño",
+      "energia": "baja",
+      "foto": ""
+    },
+    {
+      "id": 1004,
+      "nombre": "Rocky",
+      "raza": "Boxer",
+      "zona": "reforma",
+      "tamano": "grande",
+      "energia": "alta",
+      "foto": ""
+    }
+  ],
+  "runners": [
+    {
+      "id": 2000,
+      "nombre": "Carlos López",
+      "zona": "condesa",
+      "experiencia": "avanzado",
+      "foto": ""
+    },
+    {
+      "id": 2001,
+      "nombre": "María García",
+      "zona": "roma",
+      "experiencia": "intermedio",
+      "foto": ""
+    },
+    {
+      "id": 2002,
+      "nombre": "Juan Martínez",
+      "zona": "coyoacán",
+      "experiencia": "principiante",
+      "foto": ""
+    },
+    {
+      "id": 2003,
+      "nombre": "Ana Rodríguez",
+      "zona": "zona centro",
+      "experiencia": "avanzado",
+      "foto": ""
+    },
+    {
+      "id": 2004,
+      "nombre": "Pedro Pérez",
+      "zona": "reforma",
+      "experiencia": "intermedio",
+      "foto": ""
+    }
+  ],
+  "ratings_2000": [
+    {
+      "valor": "5",
+      "comentario": "¡Excelente! Cuida mucho a los perros.",
+      "fecha": "13/11/2025"
+    },
+    {
+      "valor": "4",
+      "comentario": "Muy profesional y puntual.",
+      "fecha": "12/11/2025"
+    }
+  ],
+  "ratings_2001": [
+    {
+      "valor": "5",
+      "comentario": "Mi perro volvió feliz y cansado. Perfecto.",
+      "fecha": "13/11/2025"
+    }
+  ],
+  "ratings_2002": [
+    {
+      "valor": "3",
+      "comentario": "Bien, pero llegó un poco tarde.",
+      "fecha": "11/11/2025"
+    }
+  ],
+  "pagos_2000": [
+    {
+      "id": 3000,
+      "monto": 28.50,
+      "descripcion": "Paseo de perro",
+      "fecha": "13/11/2025",
+      "hora": "14:30:00"
+    },
+    {
+      "id": 3001,
+      "monto": 32.75,
+      "descripcion": "Paseo de perro",
+      "fecha": "12/11/2025",
+      "hora": "09:15:00"
+    }
+  ],
+  "pagos_2001": [
+    {
+      "id": 3002,
+      "monto": 25.00,
+      "descripcion": "Paseo de perro",
+      "fecha": "13/11/2025",
+      "hora": "16:45:00"
+    }
+  ]
+}
