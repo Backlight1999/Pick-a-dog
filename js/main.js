@@ -1,9 +1,9 @@
-import { initPerros } from './js/modules/perros.js'
-import { initRunners } from './js/modules/runners.js'
-import { initRatings } from './js/modules/ratings.js'
-import { initPagos } from './js/modules/pagos.js'
-import { initMaps } from './js/modules/maps.js'
-import { guardarLS } from './js/modules/storage.js'
+import { initPerros } from './modules/perros.js'
+import { initRunners } from './modules/runners.js'
+import { initRatings } from './modules/ratings.js'
+import { initPagos } from './modules/pagos.js'
+import { initMaps } from './modules/maps.js'
+import { guardarLS } from './modules/storage.js'
 
 function initSampleData() {
   const btn = document.getElementById('btn-load-sample')
