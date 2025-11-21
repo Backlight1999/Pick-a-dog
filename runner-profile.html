@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Runner</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="owners.html">Mis Perros</a>
+    <a href="runners.html">Mi Perfil</a>
+    <a href="owners-runners.html">Ver Runners</a>
+</nav>
+
+<div class="container">
+    <h1>Perfil del Runner 🏃‍♂️</h1>
+
+    <div id="perfil-runner" class="card"></div>
+
+    <h2>Calificar este Runner</h2>
+
+    <form id="form-rating">
+        <label>⭐ Rating:</label>
+        <select id="ratingValue">
+            <option value="1">1 estrella</option>
+            <option value="2">2 estrellas</option>
+            <option value="3">3 estrellas</option>
+            <option value="4">4 estrellas</option>
+            <option value="5">5 estrellas</option>
+        </select>
+
+        <textarea id="ratingComentario" placeholder="Comentario opcional" style="width:100%; margin-top:10px;"></textarea>
+
+        <button type="submit" style="margin-top:10px;">Enviar Rating</button>
+    </form>
+
+    <h2>Ratings Recibidos</h2>
+    <div id="lista-ratings"></div>
+
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
