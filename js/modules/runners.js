@@ -12,7 +12,11 @@ export function initRunners(){
     items.forEach(r=>{
       const d = document.createElement('div')
       d.className = 'card'
-      const avg = r.ratingAvg ? `⭐ ${r.ratingAvg.toFixed(1)}` : ''
+      // Calculate average rating from stored ratings for this runner (ratings_<id>)
+      const rawRatings = leerLS(`ratings_${r.id}`) || []
+      const scores = rawRatings.map(rt => Number(rt.value ?? rt.valor ?? rt.valor)).filter(n => !Number.isNaN(n))
+      const avgVal = scores.length ? (scores.reduce((a,b)=>a+b,0)/scores.length) : (r.ratingAvg || 0)
+      const avg = scores.length || r.ratingAvg ? `⭐ ${avgVal.toFixed(1)}` : ''
       // Hacemos que cada card sea un enlace al perfil del runner
       d.innerHTML = `<a href="runner-profile.html?id=${r.id}" style="text-decoration:none; color:inherit;"><div class="title">${r.nombre} ${avg}</div><small class="muted">${r.zona}</small></a>`
       listaElem.appendChild(d)

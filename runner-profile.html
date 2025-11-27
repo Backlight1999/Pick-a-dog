@@ -21,6 +21,27 @@
 
     <div id="perfil-runner" class="card"></div>
 
+        <script>
+        // If the page was opened without ?id=, try to redirect using currentRunnerId saved in localStorage
+        (function(){
+            try{
+                const params = new URLSearchParams(window.location.search)
+                const id = params.get('id')
+                if(!id){
+                    const saved = localStorage.getItem('currentRunnerId')
+                    if(saved){
+                        // Avoid infinite reload loops: only redirect if the URL doesn't already contain the id
+                        const next = `${window.location.pathname}?id=${encodeURIComponent(saved)}`
+                        if(window.location.href !== window.location.origin + next){
+                            window.location.replace(next)
+                        }
+                    }
+                }
+            }catch(e){ console.warn('runner-profile redirect error', e) }
+        })()
+        </script>
+
+
     <h2>Calificar este Runner</h2>
 
     <form id="form-rating">
